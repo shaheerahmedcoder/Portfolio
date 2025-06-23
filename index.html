@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Shaheer Ahmed is a self-taught Frontend/UI Engineer, Visual Designer passionate about Open Source, Accessibility, Inclusive Design and Renewable Energy."
+    />
+    <meta
+      name="keywords"
+      content="Web Design, Software Development, UI/UX Design, Content Writing, Smart Contracts and DApp Development"
+    />
+
+    <!-- Facebook Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://portfolio-website-shaheer.vercel.app/" />
+    <meta property="og:title" content="Shaheer Ahmed Personal Website" />
+    <meta
+      property="og:description"
+      content="Shaheer Ahmed is a self-taught Frontend/UI Engineer, Visual Designer and passionate about Open Source, Accessibility, Inclusive Design and Renewable Energy."
+    />
+    <meta
+      property="og:image"
+      content="assets/images/projects/frontpage.png"
+    />
+
+    <!-- Twitter Meta Tags  -->
+    <meta property="twitter:card" content="Portfolio Website" />
+    <meta property="twitter:url" content="https://portfolio-website-shaheer.vercel.app/" />
+    <meta
+      property="twitter:title"
+      content="Shaheer Ahmed Website"
+    />
+    <meta
+      property="twitter:description"
+      content="Shaheer Ahmed is a self-taught Frontend/UI Engineer, Visual Designer ,passionate about Open Source, Accessibility, Inclusive Design and Renewable Energy."
+    />
+    <meta
+      property="twitter:image"
+      content="assets/images/projects/frontpage.png"
+    />
+
+    <!-- Favicons -->
+    <link rel="icon" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+    <link rel="icon" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+    <link rel="icon" sizes="48x48" href="./images/favicon/favicon-48x48.png" />
+    <link
+      rel="icon"
+      sizes="152x152"
+      href="./images/favicon/favicon-152x152.png"
+    />
+    <link
+      rel="icon"
+      sizes="192x192"
+      href="./images/favicon/favicon-192x192.png"
+    />
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Shaheer Ahmed | Personal Website</title>
+  </head>
+  <body>
+    <!-- <div class="preloader">
+    </div> -->
+
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">
+          <a href="#hero">
+           <h1>Portfolio</h1>
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#project">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li>
+            <button class="resume-btn">
+              <a
+                id="resume"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="assets/CV.pdf"
+                >Resume</a
+              >
+            </button>
+          </li>
+
+          <!-- Dark Mode Switch -->
+          <div class="theme-switch">
+            <input type="checkbox" id="toggle-switch" />
+            <label class="theme-icons" for="toggle-switch">
+              <img
+                class="darken"
+                src="./assets/images/icons/moon.svg"
+                alt="dark mode"
+              />
+              <img
+                class="brighten hide"
+                src="./assets/images/icons/sun.svg"
+                alt="light mode"
+              />
+            </label>
+          </div>
+        </ul>
+        <!-- Mobile Hamburger Menu -->
+        <div class="hamburger-menu">
+          <div class="bar"></div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="left">
+          <span>Hi, I'm <span class="named">Shaheer Ahmed👋</span></span>
+          <h1>Frontend Web Developer</h1>
+          <p>
+            Experienced in building functional web applications and designing
+            accessible digital products.
+          </p>
+          <a href="#about"
+            >See Why You should Work With Me
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- About Me -->
+    <section class="about" id="about">
+      <div class="about-container">
+        <div class="hidden photo-wrapper">
+          <img
+            loading="lazy"
+            class="photo"
+            src="./assets/images/profile-photo.jpeg"
+            alt=""
+          />
+        </div>
+        <div class="background">
+          <h2 class="title">Background</h2>
+          <h4 class="subtitle">A bit About Me</h4>
+          <p>
+           I'm a self-taught web developer  with experience in designing new features from ideation to production, implementation of wireframes and design flows into high performance software applications.
+          </p>
+          <p>
+           I'm passionate about Generative AI and Web and App Development!
+And a active member of the Presidential Initiative for Artificial Intelligence and Computing (PIAIC), where I am currently exploring Agentic AI — intelligent systems capable of autonomous decision-making and goal-driven behavior. This program deepens my understanding of cutting-edge AI concepts and strengthens my ability to build intelligent, adaptive applications for the future.
+          </p>
+          <p>
+            Currently, I'm exploring Backend Web development, Mobile Application development and about OpenAI SDK , Gemini API and much more  regarding Agentic AI.
+          </p>
+        </div>
+      </div>
+      <div class="technologies">
+        <h4>My core tools and technologies</h4>
+        <div class="tools">
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
+          <ul>
+            <li>Nextjs</li>
+            <li>Tailwind CSS</li>
+            <li>Reactjs</li>
+          </ul>
+          <ul>
+            <li>Figma</li>
+            <li>Firebase</li>
+            <li>Git/GitHub</li>
+          </ul>
+          <ul>
+            <li>C</li>
+            <li>DSA in C++</li>
+            <li>OOP in Java</li>
+          </ul>
+          <ul>
+            <li>Python</li>
+            <li>Typescript</li>
+            <li>Bootstrap</li>
+          </ul>
+          <ul>
+            <li>Netlify</li>
+            <li>Vercel</li>
+            <li>Agentic AI <sup>soon!</sup></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="project" id="project">
+      <div class="project-container">
+        <div class="text">
+          <h2 class="title" data-title="My works">Featured Projects</h2>
+          <p>Some Projects I have worked on</p>
+        </div>
+
+        <div class="project-container">
+          <div class="filter">
+            <button class="filter-btn active" data-filter="*">All</button>
+            <!-- <button class="filter-btn" data-filter=".design">Design</button>
+            <button class="filter-btn" data-filter=".software">Software</button>
+            <button class="filter-btn" data-filter=".blockchain">
+              Blockchain
+            </button> -->
+          </div>
+
+          <div class="projects">
+            <!-- Project 1 -->
+            <div class="hidden project-box software">
+              <div class="project-details">
+                <div class="project-text">
+                  <h3>Campus Connect</h3>
+                  <p>
+Here's an amazing project where we connect our University students , and facilitate them as they can do job postings , can build alumni network and can also get study material like notes , university past papers and etc.
+                  </p>
+                  <span class="stack">React Js, Vercel</span>
+                </div>
+
+                <div class="project-link">
+                  <a
+                    href="https://campus-connect-hazel-rose.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a
+                    href="https://github.com/shaheerahmedcoder/Campus-Connect"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="hidden project-box software">
+              <div class="project-details">
+                <div class="project-text">
+                  <h3>Ecommerce Website</h3>
+                  <p>A Ecommerce business Website UI.</p>
+                  <span class="stack">Nextjs, Typescript, JavaScript, Tailwind CSS, CSS, Vercel</span>
+                </div>
+
+                <div class="project-link">
+                  <a
+                    href="https://e-commerce-website-ui-lyart.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a
+                    href="https://github.com/shaheerahmedcoder/E-Commerce-Website-UI"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="hidden project-box blockchain">
+              <div class="project-details">
+                <div class="project-text">
+                  <h3>Salt n Pepper Website CLone</h3>
+                  <p>
+This is the HTML and CSS final project, in which I have cloned a restaurant website name as "Salt and Pepper". In this website we will use all the concepts of HTML and CSS , and utility classes will also be used! You can visit this website by the link below;
+                  </p>
+                  <span class="stack"
+                    >HTML, CSS, Github Deployment</span
+                  >
+                </div>
+
+                <div class="project-link">
+                  <a
+                    href="https://shaheerahmedcoder.github.io/Salt-and-Pepper/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a
+                    href="https://github.com/shaheerahmedcoder/Salt-and-Pepper"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="hidden project-box software">
+              <div class="project-details">
+                <div class="project-text">
+                  <h3>Calculator</h3>
+                  <p>A Simple calculator for mathematical operations</p>
+                  <span class="stack">HTML, CSS, JavaScript, GitHub Deployment</span>
+                </div>
+
+                <div class="project-link">
+                  <a
+                    href="https://shaheerahmedcoder.github.io/Calculator/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a
+                    href="https://github.com/shaheerahmedcoder/Calculator"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="hidden project-box software">
+              <div class="project-details">
+                <div class="project-text">
+                  <h3>Resume Builder</h3>
+                  <p>A Dynamic Resume Builder by entering your information you can download your resume in pdf format, can share the resume through a shareable link in a unique way.</p>
+                  <span class="stack">HTML, CSS, JavaScript, Vercel</span>
+                </div>
+
+                <div class="project-link">
+                  <a
+                    href="https://personal-information-blond.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a
+                    href="https://github.com/shaheerahmedcoder/Personal--Information"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="hidden project-box design">
+              <div class="project-details">
+                <div class="project-text">
+                  <h3>Toss App</h3>
+                  <p>
+                    A toss app by using HTML , CSS and JavaScript.
+                  </p>
+                  <span class="stack">HTML, CSS, Javascript</span>
+                </div>
+
+               <div class="project-link">
+                  <a
+                    href="https://shaheerahmedcoder.github.io/Toss-App/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a
+                    href="https://github.com/shaheerahmedcoder/Toss-App"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Project 7 -->
+            <div class="hidden project-box software">
+              <div class="project-details">
+                <div class="project-text">
+                  <h3>Card Game</h3>
+                  <p>
+A toss app by using HTML , CSS and JavaScript.
+                  </p>
+                  <span class="stack">HTML, CSS, React JS, Vite(framework), Vercel</span>
+                </div>
+
+                <div class="project-link">
+                  <a
+                    href="https://card-game-4.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a
+                    href="https://github.com/shaheerahmedcoder/Card-Game"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 8 -->
+            <div class="hidden project-box software">
+              <div class="project-details">
+                <div class="project-text">
+                  <h3>Todo App</h3>
+                  <p>
+                 A todo app made by using HTML , CSS and JavaScript!
+                  </p>
+                  <span class="stack">HTML, CSS, JavaScript, GitHub Deployment</span>
+                </div>
+
+                <div class="project-link">
+                  <a
+                    href="https://shaheerahmedcoder.github.io/Todo-App/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a
+                    href="https://github.com/shaheerahmedcoder/Todo-App"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 9 -->
+            <div class="hidden project-box blockchain">
+              <div class="project-details">
+                <div class="project-text">
+                  <h3>Agentic AI</h3>
+                  <p>
+                   Agentic AI refers to AI systems capable of autonomous decision-making, goal-setting, and adaptive behavior without constant human input. Unlike traditional AI, it acts more like an intelligent agent—reasoning, planning, and taking initiative to achieve complex objectives in dynamic environments.
+                  </p>
+                  <span class="stack">Typescript, Nextjs, Python, Generative AI</span>
+                </div>
+
+                <div class="project-link">
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <!-- <i class="fas fa-link"></i> -->
+                  </a>
+                  <a
+                    href="https://github.com/shaheerahmedcoder"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="project-btn">
+        <a
+          href="https://github.com/shaheerahmedcoder"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><span class="txt-see">See More Work </span>
+        </a>
+        <i class="fas fa-long-arrow-alt-right"></i>
+      </button>
+    </section>
+
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="form-container">
+        <div class="form-text">
+          <h2 class="title">Get In Touch</h2>
+          <p>
+            Do you have a project and/or want to have a chat? <br />
+            Feel free to send me a message, I will definitely reply.
+          </p>
+        </div>
+
+        <form
+          id="contact-form"
+          name="contact"
+          action="./src/contact.html"
+          method="POST"
+          data-netlify="true"
+          onSubmit="submit"
+          data-netlify-honeypot="bot-field"
+        >
+          <input name="bot-field" style="display: none" />
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" name="name" required />
+
+          <label for="subject">Subject</label>
+          <input type="text" name="subject" id="subject" name="subject" />
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Type your message here..."
+            rows="8"
+            name="message"
+          ></textarea>
+          <!-- <button onclick="msgDone()" class="contact-btn">SEND MESSAGE</button> -->
+          
+        </form>
+        <button onclick="msgDone()" class="contact-btn">Send Message</button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="email">
+        <i class="fas fa-envelope"></i>
+        <a
+          href="mailto:shaheerahmed.0206@gmail.com"
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          >shaheerahmed.0206@gmail.com</a
+        >
+      </div>
+      <div class="footer-socials">
+        <a
+          href="https://www.twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+
+        <a
+          href="https://www.github.com/shaheerahmedcoder"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+
+
+        <a
+          href="https://www.linkedin.com/in/shaheer-ahmed-892776321/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+
+      <p class="copyright">
+        Copyright 2025 &copy;
+        <a
+          href=""
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+         Shaheer Ahmed
+        </a>
+        - All Right Reserved.
+      </p>
+    </footer>
+
+    <div class="scrollup">
+      <a href="#" id="scroll-btn"><i class="fas fa-angle-up"></i></a>
+    </div>
+
+    <script src="./js/mixitup.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
+
+<script>
+  function msgDone() {
+    alert("Message sent successfully!");
+    setTimeout(function () {
+      window.location.href = "message.html";
+    }, 500);
+  }
+</script>

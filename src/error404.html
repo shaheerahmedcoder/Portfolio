@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+        name="description"
+        content="Shaheer Ahmed is a Frontend/UI Engineer, and Visual Designer passionate about Open Source Software, User Experience, Web Animation, Accessibility, and Inclusive Design."
+      />
+      <meta
+        name="keywords"
+        content="Web Design, Software Development Product Design, Smart Contracts and DApp Development"
+      />
+  
+      <!-- Facebook Open Graph -->
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://portfolio-website-shaheer.vercel.app/" />
+      <meta property="og:title" content="Shaheer Ahmed Personal Website" />
+      <meta
+        property="og:description"
+        content="Shaheer Ahmed is a Frontend/UI Engineer, and Visual Designer passionate about Open Source Software, User Experience, Web Animation, Accessibility, and Inclusive Design."
+      />
+      <meta
+        property="og:image"
+        content="https://user-images.githubusercontent.com/"
+      />
+  
+      <!-- Twitter Meta Tags  -->
+      <meta property="twitter:card" content="Portfolio Website" />
+      <meta property="twitter:url" content="https://portfolio-website-shaheer.vercel.app/" />
+      <meta
+        property="twitter:title"
+        content="Shaheer Ahmed Personal Website"
+      />
+      <meta
+        property="twitter:description"
+        content="Shaheer Ahmed is a Frontend/UI Engineer,  and Visual Designer passionate about Open Source Software, User Experience, Web Animation, Accessibility, and Inclusive Design."
+      />
+      <meta
+        property="twitter:image"
+        content="https://user-images.githubusercontent.com/"
+      />
+  
+      <!-- Favicons -->
+      <link rel="icon" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+      <link rel="icon" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+      <link rel="icon" sizes="48x48" href="./images/favicon/favicon-48x48.png" />
+      <link
+        rel="icon"
+        sizes="152x152"
+        href="./images/favicon/favicon-152x152.png"
+      />
+      <link
+        rel="icon"
+        sizes="192x192"
+        href="./images/favicon/favicon-192x192.png"
+      />
+      <!-- Fonts -->
+      <link
+        rel="stylesheet"
+        href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+        crossorigin="anonymous"
+      />
+  
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+      <!-- Styles -->
+      <link rel="stylesheet" href="./css/global.css" />
+      <link rel="stylesheet" href="./css/style.css" />
+    <title>Shaheer Ahmed | Error Page</title>
+    <style>
+      #error {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        margin-top: 120px;
+      }
+
+      .container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .four {
+        font-family: "Roboto Mono", monospace;
+        font-size: 15rem;
+      }
+
+      .zero {
+        position: relative;
+        border-radius: 50%;
+        background-color: #222;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        display: inline-block;
+      }
+
+      .zero::before {
+        background-color: #3c9;
+        border-radius: 40%;
+        content: "";
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        bottom: 100px;
+        left: -50px;
+        animation: waveup 4s linear infinite;
+      }
+
+      @keyframes waveup {
+        0% {
+          transform: rotate(0deg);
+        }
+        60% {
+          transform: rotate(180deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .zero::after {
+        background-color: #0c9;
+        border-radius: 30%;
+        content: "";
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        bottom: 100px;
+        left: -50px;
+        opacity: 0.6;
+        animation: wavedown 4s linear infinite;
+      }
+
+      @keyframes wavedown {
+        0% {
+          transform: rotate(0deg);
+        }
+        60% {
+          transform: rotate(180deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .text {
+        font-family: "Roboto Mono", monospace;
+        padding: 10px 0;
+      }
+
+      .back-btn a:hover {
+        color: #f6f6f6;
+      }
+    </style>
+  </head>
+  <body id="error">
+    <div class="container">
+      <div>
+        <span class="four">4</span>
+        <div class="zero"></div>
+        <span class="four">4</span>
+      </div>
+      <div class="content">
+        <h1 class="heading">Page not Found</h1>
+        <p class="text">
+          Whoops..! <br />
+          Sorry, we are not able to find what you were looking for...
+        </p>
+        <button class="back-btn">
+          <a href="../index.html#hero"
+            ><i class="fas fa-chevron-left"></i>Go Back
+          </a>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,684 @@
+body {
+  background-color: var(--bg-color-secondary);
+  color: var(--text-primary);
+  font-family: "Jost", sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* -- Header -- */
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  z-index: 99;
+}
+
+nav {
+  background-color: var(--bg-color-primary);
+  box-shadow: var(--box-shadow);
+  font-family: "Jost", sans-serif;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 80px;
+  width: 100%;
+  height: 70px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  right: -680px;
+}
+
+nav ul li {
+  list-style: none;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  margin: 0 20px;
+}
+
+nav a {
+  border: none;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+
+nav a:hover {
+  color: var(--cta-primary);
+}
+
+.resume-btn,
+.back-btn {
+  background-color: var(--bg-color-primary);
+  border: 1px solid var(--highlight);
+  border-radius: 10px;
+  color: var(--cta-primary);
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in;
+}
+
+.resume-btn:hover,
+.back-btn:hover {
+  border: none;
+  background-color: var(--cta-primary);
+  color: var(--color-white);
+}
+
+#resume {
+  color: inherit;
+}
+
+/* -- Main -- */
+main {
+  background-color: var(--bg-color-secondary);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 90%, 0 100%);
+  background-size: 55px 55px;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 220px 80px 0px;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -450px;
+  bottom: -60px;
+  background-image: url(../assets/images/pattern.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 85%;
+  height: 100%;
+}
+
+.left {
+  color: var(--text-secondary);
+}
+
+.left span {
+  color: var(--text-secondary);
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.left h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.left p {
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 14px;
+  line-height: 1.5;
+  width: 60%;
+}
+
+.left a {
+  color: var(--cta-primary);
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.left a:hover {
+  color: var(--highlight);
+}
+
+.left a:hover i {
+  padding-left: 5px;
+}
+
+/* -- About Me -- */
+.about {
+  padding: 60px 80px;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.photo {
+  width: 260px;
+}
+
+.photo-wrapper {
+  position: relative;
+}
+
+.photo-wrapper::after {
+  position: absolute;
+  border: 4px solid var(--highlight);
+  content: "";
+  transform: translate(-94%, 4%);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background {
+  padding-left: 100px;
+}
+
+.background h2,
+.background h4 {
+  color: var(--text-secondary);
+}
+
+.background p {
+  position: relative;
+  animation: slide-up 3s ease-in 1s forwards;
+}
+
+@keyframes slide-up {
+  from {
+    bottom: -80px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+
+.title {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+}
+
+.about p {
+  color: var(--text-secondary);
+  font-family: "Roboto Mono", monospace;
+  line-height: 1.3;
+  margin: 10px 0;
+}
+
+.technologies {
+  position: relative;
+  color: var(--text-secondary);
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0 0px;
+  animation: slide-right 3s ease-in 1s forwards;
+}
+
+@keyframes slide-right {
+  from {
+    left: -800px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+.tools {
+  font-family: "Roboto Mono", monospace;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.tools ul {
+  list-style: none;
+  padding-top: 10px;
+}
+
+.tools ul li {
+  padding: 3px 40px 3px 0;
+  margin-top: 2px;
+}
+
+/* -- Projects -- */
+.project {
+  background-color: var(--bg-color-primary);
+  color: var(--text-secondary);
+  position: relative;
+  padding: 60px 0;
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.filter-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--text-secondary);
+  margin: 0 8px;
+  padding: 10px 14px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in;
+}
+
+.filter-btn.active {
+  background-color: var(--cta-primary);
+  color: var(--color-white);
+  font-weight: bold;
+}
+
+.filter-btn:hover {
+  border: 1.5px solid var(--highlight);
+}
+
+.project-container {
+  margin-bottom: 20px;
+  padding: 0 40px;
+}
+
+.projects {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.project-box:hover {
+  box-shadow: inset 0 100px 1000px 60px var(--text-primary);
+  border: 1.5px solid var(--highlight);
+}
+
+.project-details {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+}
+
+.project-box:hover .project-details {
+  opacity: 1;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 30px;
+  text-align: left;
+}
+
+.project-text h3 {
+  font-size: 1rem;
+}
+
+.project-text p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.65rem;
+  margin: 10px 0;
+  line-height: 1.4;
+}
+
+.project-text .stack {
+  color: var(--highlight);
+  font-size: 0.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.project-link a {
+  display: flex;
+  padding: 5px;
+  color: var(--color-white);
+}
+
+.project-link a .fab,
+.project-link .fas {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-link a i:hover {
+  color: var(--highlight);
+}
+
+.project-box {
+  background: var(--bg-color-secondary);
+  border-radius: 5px;
+  color: var(--color-white);
+  cursor: pointer;
+  padding: 1rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out;
+  min-height: 250px;
+}
+
+.project-box:nth-child(1) {
+  background-image: url(../assets/images/projects/Campus\ Connect.png);
+}
+
+.project-box:nth-child(2) {
+  background-image: url(../assets/images/projects/EcomWebUI.png);
+}
+
+.project-box:nth-child(3) {
+  background-image: url(../assets/images/projects/SaltnPepper.png);
+}
+
+.project-box:nth-child(4) {
+  background-image: url(../assets/images/projects/CAL.png);
+}
+
+.project-box:nth-child(5) {
+  background-image: url(../assets/images/projects/DResume.png);
+}
+
+.project-box:nth-child(6) {
+  background-image: url(../assets/images/projects/TossAPP.png);
+}
+
+.project-box:nth-child(7) {
+  background-image: url(../assets/images/projects/CardG.png);
+}
+
+.project-box:nth-child(8) {
+  background-image: url(../assets/images/projects/Todo\ App.png);
+}
+
+.project-box:nth-child(9) {
+  background-image: url(../assets/images/projects/soon.png);
+}
+
+/* -- Blog -- */
+.blog {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../assets/images/bg-image.png);
+  padding: 35px 0 35px;
+  overflow-x: hidden;
+}
+
+.blog-container {
+  text-align: center;
+}
+
+.blog .text,
+.blog .subtitle {
+  color: var(--color-white);
+  text-align: center;
+  margin: 15px 0;
+}
+
+.blog .subtitle {
+  padding: 0 30px;
+}
+
+.article-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  grid-gap: 20px;
+  padding: 5px 80px 40px;
+  text-align: left;
+}
+
+.thumbnail {
+  display: block;
+  position: relative;
+  object-fit: cover;
+  min-height: 80px;
+  height: 250px;
+  width: 100%;
+}
+
+.article {
+  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  background-color: var(--color-white);
+  max-width: 380px;
+  width: 100%;
+  margin: 6px;
+  overflow: hidden;
+}
+
+.article-preview {
+  margin-top: 10px;
+  padding: 15px;
+}
+.txt-see{
+  color: chartreuse;
+}
+
+.article-title {
+  color: var(--text-primary);
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.named{
+ 
+  font-weight: bolder; 
+ 
+
+}
+
+.article-intro {
+  color: var(--text-primary);
+  margin-bottom: 15px;
+}
+
+.readmore {
+  color: var(--box-shadow);
+  font-size: 0.8rem;
+  text-decoration: none !important;
+}
+
+.blog-btn,
+.project-btn {
+  background-color: var(--text-primary);
+  border: 1.5px solid var(--color-white);
+  color: greenyellow;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  height: 40px;
+  width: 140px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+/* --Button hover effect-- */
+.blog-btn span,
+.project-btn span {
+  transition: all 0.5s ease;
+}
+
+.blog-btn:hover span,
+.project-btn:hover span {
+  color: var(--text-primary);
+}
+
+.blog-btn::after,
+.project-btn::after {
+  position: absolute;
+  content: "";
+  left: -10%;
+  width: 0;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.6s cubic-bezier(0.75, 0.85, 0.165, 1.1);
+}
+
+.blog-btn:hover,
+.project-btn:hover {
+  border: 2px solid var(--text-primary);
+  background-color: var(--color-white);
+}
+
+.blog-btn:hover::after,
+.project-btn:hover::after {
+  background-color: var(--color-white);
+  border: 2px solid var(--text-primary);
+  left: 100%;
+}
+
+/* -- Contact -- */
+.contact {
+  align-items: center;
+  margin: 60px 80px;
+}
+
+.form-text {
+  color: var(--text-secondary);
+  text-align: center;
+  padding-top: 30px;
+}
+
+.form-text p {
+  font-family: "Roboto Mono", monospace;
+  line-height: 1.5;
+  padding: 5px 0 15px;
+}
+
+#contact-form {
+  border: 0.5px solid var(--text-secondary);
+  border-radius: 5px;
+  padding: 20px 15px;
+  margin: 0 auto 50px;
+  max-width: 600px;
+}
+
+label {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  font-family: "Roboto Mono", monospace;
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+  border: 0.5px solid var(--text-secondary);
+  border-radius: 5px;
+  background-color: var(--box-color);
+  color: var(--text-secondary);
+  font-size: 1rem;
+  padding: 10px 15px;
+  margin: 10px 0 25px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+input {
+  border-bottom: 2px solid var(--text-secondary);
+}
+
+textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid var(--highlight);
+}
+
+/* .contact-btn {
+  background-color: var(--cta-primary);
+  border: none;
+  border-radius: 5px;
+  color: var(--color-white);
+  cursor: pointer;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  padding: 12px 0;
+  width: 50%;
+} */
+.contact-btn {
+  background-color: var(--cta-primary);
+  border: none;
+  border-radius: 5px;
+  color: var(--color-white);
+  cursor: pointer;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  padding: 12px 0;
+  width: 50%;
+  margin: 20px auto 0 auto; /* Centering */
+  display: block; /* In case it's inline */
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+
+.contact-btn:hover {
+  background-color: var(--highlight);
+}
+
+/* -- Footer -- */
+footer {
+  background-color: var(--box-color);
+  color: var(--text-secondary);
+  font-family: "Roboto Mono", monospace;
+  padding: 35px 0;
+  text-align: center;
+}
+
+.footer-socials {
+  margin: 25px 0;
+}
+
+.footer-socials i {
+  padding: 5px;
+  color: var(--text-secondary);
+}
+
+.footer-socials i {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-socials i:hover {
+  border: 1.5px solid var(--highlight);
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.copyright {
+  font-size: 0.8rem;
+}
