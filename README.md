@@ -7,7 +7,8 @@ Welcome to my personal portfolio! I’m **Shaheer Ahmed**, a Frontend Web Develo
 ## 🔗 Live Demo
 
 Check out the live website:  
-🌐 ([https://portfolio-website-shaheer.vercel.app](https://shaheer-portfolio-ten.vercel.app/))
+🌐 ([(https://shaheer-portfolio-ten.vercel.app/)](https://shaheer-portfolio-ten.vercel.app/))
+
 
 ---
 
